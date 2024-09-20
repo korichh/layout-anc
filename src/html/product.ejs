@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./components/root/head.ejs', { title: 'Product' }) %>
+
+<body>
+    <div class="page">
+        <%- include('./components/root/header.ejs') %>
+        <main class="main">
+            <%- include('./components/partials/breadcrumbs.ejs', { crumbs: ['Home', 'Category', 'Product'] }) %>
+            <section class="product">
+                <div class="container">
+                    <div class="product__inner">
+                        <div class="product__content">
+                            <h1 class="title_prim">Nootropil</h1>
+                            <div class="product__article"><span>Vendor code:</span> <span class="product__article-value">56386</span></div>
+                        </div>
+                        <div class="product__tab tab">
+                            <div class="tab__nav">
+                                <button class="_active" data-for="about"><span class="icon-info"></span><span>About</span></button>
+                                <button data-for="relevant"><span class="icon-pills"></span><span>Relevant</span></button>
+                                <button data-for="feedback"><span class="icon-feedback"></span><span>Feedback (70)</span></button>
+                            </div>
+                            <div class="product__item product-item">
+                                <div class="product-item__left">
+                                    <div class="product-item__left-inner">
+                                        <div class="product-item__left-content">
+                                            <div class="product-item__top">
+                                                <div class="product-item__image">
+                                                    <img src="img/products/test.webp" alt="image product" loading="lazy" width="207" height="180">
+                                                    <div class="product-item__discount"><span class="product-item__discount-text">Discount</span><span class="product-item__discount-value">-31%</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__bottom">
+                                                <form class="product-item__bottom-form product-form">
+                                                    <div class="product-form__selects">
+                                                        <div class="product-form__dose">
+                                                            <span>Dose</span>
+                                                            <div class="select _top">
+                                                                <button class="select__selected"><span class="select__selected-value">Select</span><span class="icon-arrow"></span></button>
+                                                                <div class="select__options">
+                                                                    <button>nootropil 400mg * 30</button>
+                                                                    <button>nootropil 400mg * 60</button>
+                                                                    <button>nootropil 400mg * 90</button>
+                                                                    <button>nootropil 400mg * 120</button>
+                                                                    <button>nootropil 400mg * 180</button>
+                                                                    <button>nootropil 400mg * 270</button>
+                                                                    <button>nootropil 400mg * 360</button>
+                                                                    <button>nootropil 800mg * 30</button>
+                                                                    <button>nootropil 800mg * 60</button>
+                                                                    <button>nootropil 800mg * 90</button>
+                                                                    <button>nootropil 800mg * 120</button>
+                                                                    <button>nootropil 800mg * 180</button>
+                                                                    <button>nootropil 800mg * 270</button>
+                                                                    <button>nootropil 800mg * 360</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-form__count">
+                                                            <span>Count</span>
+                                                            <div class="count">
+                                                                <button class="count__btn count__decr">-</button>
+                                                                <input class="count__input" type="number" value="1" min="1" max="20" required>
+                                                                <button class="count__btn count__incr">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-form__submit">
+                                                        <div class="product-form__price">
+                                                            <span class="product-form__old-price"><span>Old price:</span> <del><span class="product-form__old-price-value">50</span> €</del></span>
+                                                            <span class="product-form__current-price"><span>From</span> <span class="product-form__current-price-value">34.36</span> €</span>
+                                                        </div>
+                                                        <button class="btn btn_prim product-form__buy">Buy</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item__right">
+                                    <div class="product-item__right-inner">
+                                        <div data-id="about" class="tab__body product-item__about product-about _active">
+                                            <div class="product-about__top">
+                                                <div class="product-about__article"><span>Vendor code:</span> <span class="product-about__article-value">56386</span></div>
+                                                <div class="product-about__actions">
+                                                    <button class="product-about__rating" data-for="feedback">
+                                                        <div class="product-about__stars">
+                                                            <span class="icon-star-fill"></span>
+                                                            <span class="icon-star-fill"></span>
+                                                            <span class="icon-star-fill"></span>
+                                                            <span class="icon-star-fill"></span>
+                                                            <span class="icon-star-fill"></span>
+                                                        </div>
+                                                        <div class="product-about__reviews">(<span class="product-about__reviews-value">71</span>)</div>
+                                                    </button>
+                                                    <button class="product-about__save"><span class="icon-heart"></span></button>
+                                                </div>
+                                                <div class="product-about__stock">In stock — <span class="product-about__stock-value">5</span> pieces</div>
+                                                <ul class="product-about__list">
+                                                    <li class="product-about__item"><span class="icon-delivery-fill"></span><span>Delivery throughout gr — 5-9 days</span></li>
+                                                    <li class="product-about__item"><span class="icon-anonym-fill"></span><span>Anonymous packaging</span></li>
+                                                    <li class="product-about__item"><span class="icon-payment-fill"></span><span>Payment methods:</span></li>
+                                                </ul>
+                                                <form class="product-about__form product-form">
+                                                    <div class="product-form__selects">
+                                                        <div class="product-form__dose">
+                                                            <span>Dose</span>
+                                                            <div class="select">
+                                                                <button class="select__selected"><span class="select__selected-value">Select</span><span class="icon-arrow"></span></button>
+                                                                <div class="select__options">
+                                                                    <button>nootropil 400mg * 30</button>
+                                                                    <button>nootropil 400mg * 60</button>
+                                                                    <button>nootropil 400mg * 90</button>
+                                                                    <button>nootropil 400mg * 120</button>
+                                                                    <button>nootropil 400mg * 180</button>
+                                                                    <button>nootropil 400mg * 270</button>
+                                                                    <button>nootropil 400mg * 360</button>
+                                                                    <button>nootropil 800mg * 30</button>
+                                                                    <button>nootropil 800mg * 60</button>
+                                                                    <button>nootropil 800mg * 90</button>
+                                                                    <button>nootropil 800mg * 120</button>
+                                                                    <button>nootropil 800mg * 180</button>
+                                                                    <button>nootropil 800mg * 270</button>
+                                                                    <button>nootropil 800mg * 360</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-form__count">
+                                                            <span>Count</span>
+                                                            <div class="count">
+                                                                <button class="count__btn count__decr">-</button>
+                                                                <input class="count__input" type="number" value="1" min="1" max="20" required>
+                                                                <button class="count__btn count__incr">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-form__submit">
+                                                        <div class="product-form__price">
+                                                            <span class="product-form__old-price"><span>Old price:</span> <del><span class="product-form__old-price-value">50</span> €</del></span>
+                                                            <span class="product-form__current-price"><span>From</span> <span class="product-form__current-price-value">34.36</span> €</span>
+                                                        </div>
+                                                        <button class="btn btn_prim product-form__buy">Buy</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="product-about__bottom">
+                                                <div class="product-about__warning product-warning">
+                                                    <ul class="product-warning__list">
+                                                        <li class="product-warning__item product-warning__card">
+                                                            <div class="product-warning__card-inner">
+                                                                <div class="product-warning__card-icon"><span class="icon-pregnancy"></span></div>
+                                                                <div class="product-warning__card-content">
+                                                                    <h3 class="product-warning__card-title">Pregnant</h3>
+                                                                    <p class="product-warning__card-text">not allowed</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="product-warning__item product-warning__card">
+                                                            <div class="product-warning__card-inner">
+                                                                <div class="product-warning__card-icon"><span class="icon-allergy"></span></div>
+                                                                <div class="product-warning__card-content">
+                                                                    <h3 class="product-warning__card-title">Allergy</h3>
+                                                                    <p class="product-warning__card-text">not allowed</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="product-warning__item product-warning__card">
+                                                            <div class="product-warning__card-inner">
+                                                                <div class="product-warning__card-icon"><span class="icon-diabet"></span></div>
+                                                                <div class="product-warning__card-content">
+                                                                    <h3 class="product-warning__card-title">Diabet</h3>
+                                                                    <p class="product-warning__card-text">not allowed</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="product-warning__item product-warning__card">
+                                                            <div class="product-warning__card-inner">
+                                                                <div class="product-warning__card-icon"><span class="icon-drive"></span></div>
+                                                                <div class="product-warning__card-content">
+                                                                    <h3 class="product-warning__card-title">Driver</h3>
+                                                                    <p class="product-warning__card-text">not allowed</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="product-warning__item product-warning__card">
+                                                            <div class="product-warning__card-inner">
+                                                                <div class="product-warning__card-icon"><span class="icon-receipt"></span></div>
+                                                                <div class="product-warning__card-content">
+                                                                    <h3 class="product-warning__card-title">Available</h3>
+                                                                    <p class="product-warning__card-text">without a prescription</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="product-warning__item product-warning__card">
+                                                            <div class="product-warning__card-inner">
+                                                                <div class="product-warning__card-icon"><span class="icon-man"></span></div>
+                                                                <div class="product-warning__card-content">
+                                                                    <h3 class="product-warning__card-title">Adult</h3>
+                                                                    <p class="product-warning__card-text">allowed</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="product-warning__item product-warning__card">
+                                                            <div class="product-warning__card-inner">
+                                                                <div class="product-warning__card-icon"><span class="icon-kid"></span></div>
+                                                                <div class="product-warning__card-content">
+                                                                    <h3 class="product-warning__card-title">Kids</h3>
+                                                                    <p class="product-warning__card-text">from 15 years old</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-about__description content">
+                                                    <h3>Description</h3>
+                                                    <p>Lorem, ipsum dolor.</p>
+                                                    <table>
+                                                        <tr>
+                                                            <th>Formato</th>
+                                                            <td>Capsulas</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Cantidad</th>
+                                                            <td>60ud</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Veggi si/no</th>
+                                                            <td>Si</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Precio cantidad</th>
+                                                            <td>0.31€/1 ud</td>
+                                                        </tr>
+                                                    </table>
+                                                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni commodi debitis voluptatibus, ducimus perferendis nam ab, nobis vero distinctio asperiores aperiam qui soluta ipsam, animi beatae. Quis facere tempora consectetur commodi placeat accusamus, rerum voluptates mollitia, totam nostrum beatae.</p>
+                                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, adipisci!</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <ul>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem, ipsum dolor.</li>
+                                                        <li>Lorem ipsum dolor sit.</li>
+                                                        <li>Lorem ipsum dolor sit.</li>
+                                                    </ul>
+                                                    <h3>Lorem, ipsum.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae rem illo voluptatibus. Omnis, doloribus quaerat.</p>
+                                                    <h3>Lorem.</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id odit a ullam sit hic laudantium quisquam maxime nostrum cum!</p>
+                                                    <h3>FAQ</h3>
+                                                    <%- include('./components/partials/acc-list.ejs', { count: 3 }) %>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-id="relevant" class="tab__body product-item__relevant product-relevant">
+                                            <%- include('./components/partials/products-list.ejs', { count: 10 }) %>
+                                            <%- include('./components/partials/pagination.ejs') %>
+                                        </div>
+                                        <div data-id="feedback" class="tab__body product-item__feedback product-feedback">
+                                            <div class="product-feedback__top">
+                                                <div class="product-feedback__title">Leave your feedback about the product</div>
+                                                <button data-popup="feedback|Leave a feedback" class="btn btn_prim product-feedback__btn">Leave a feedback</button>
+                                            </div>
+                                            <div class="product-feedback__bottom">
+                                                <%- include('./components/partials/reviews-list.ejs', { count: 6 }) %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include('./components/root/footer.ejs') %>
+        <%- include('./components/root/popup.ejs') %>
+        <%- include('./components/root/cookie.ejs') %>
+        <%- include('./components/root/scroll-top.ejs') %>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<section class="popup">
+    <div class="popup__inner">
+        <div class="popup__head">
+            <h2 class="title"></h2>
+            <button class="close"><span class="icon-close"></span></button>
+        </div>
+        <div class="popup__content location">
+            <div class="location__inner">
+                <div class="location__detect">
+                    <button class="btn btn_prim">Detect your city</button> <span>by GPS</span>
+                </div>
+                <form class="location__form location-form">
+                    <div class="location-form__search">
+                        <button class="icon-search"></button>
+                        <input type="text" placeholder="Search your city...">
+                    </div>
+                </form>
+                <ul class="location__list">
+                    <li><button>Madrid</button></li>
+                    <li><button>Barcelona</button></li>
+                    <li><button>Valencia</button></li>
+                    <li><button>Seville</button></li>
+                    <li><button>Bilbao</button></li>
+                    <li><button>Málaga</button></li>
+                    <li><button>Asturias</button></li>
+                    <li><button>Alicante</button></li>
+                    <li><button>Las Palmas</button></li>
+                    <li><button>Zaragoza</button></li>
+                    <li><button>Murcia</button></li>
+                    <li><button>Santa Cruz de Tenerife</button></li>
+                    <li><button>Granada</button></li>
+                    <li><button>Palma de Mallorca</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup__content cart">
+            <div class="cart__inner">
+                <div class="cart__count"><span class="cart__count-value">4</span> <span>items in cart</span></div>
+                <%- include('../partials/cart-list.ejs', { count: 4 }) %>
+                <div class="cart__bottom">
+                    <div class="cart__total"><span>Total</span><span class="cart__total-value">0</span><span>€</span></div>
+                    <button class="cart__btn btn">Go to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup__content feedback">
+            <div class="feedback__inner">
+                <form class="feedback__form feedback-form form">
+                    <div class="form__row">
+                        <fieldset class="feedback-form__rating form__column">
+                            <span>Rate this product</span>
+                            <div class="feedback-form__stars">
+                                <input id="rate5" type="radio" name="rating" value="5" checked>
+                                <label for="rate5"><span class="icon-star-fill"></span></label>
+                                <input id="rate4" type="radio" name="rating" value="4">
+                                <label for="rate4"><span class="icon-star-fill"></span></label>
+                                <input id="rate3" type="radio" name="rating" value="3">
+                                <label for="rate3"><span class="icon-star-fill"></span></label>
+                                <input id="rate2" type="radio" name="rating" value="2">
+                                <label for="rate2"><span class="icon-star-fill"></span></label>
+                                <input id="rate1" type="radio" name="rating" value="1">
+                                <label for="rate1"><span class="icon-star-fill"></span></label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form__row">
+                        <label class="feedback-form__image form__column">
+                            <input type="file" accept=".jpg,.jpeg,.png" name="avatar">
+                            <span>Upload avatar</span>
+                            <div class="feedback-form__preview"><img src="img/review/default.webp" alt="default avatar" loading="lazy" width="100" height="100"></div>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__column">
+                            <span>Name</span>
+                            <input type="text" placeholder="John Doe" name="name" required>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__column">
+                            <span>Email</span>
+                            <input type="email" placeholder="example@gmail.com" name="email" required>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__column">
+                            <span>Text</span>
+                            <textarea placeholder="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quasi!" name="text" required></textarea>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__column">
+                            <button class="btn btn_prim">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

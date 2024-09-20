@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./components/root/head.ejs', { title: 'Categories' }) %>
+
+<body>
+    <div class="page">
+        <%- include('./components/root/header.ejs') %>
+        <main class="main">
+            <section class="categories">
+                <div class="container">
+                    <div class="categories__inner">
+                        <div class="categories__content">
+                            <h1 class="title_prim">Categories</h1>
+                        </div>
+                        <ul class="categories__list categories-list">
+                            <% for (let i = 0; i < 39; i++) { %>
+                            <li class="categories-list__item categories-card">
+                                <a href="/category.html" class="categories-card__inner">
+                                    <div class="categories-card__icon"><span class="icon-pills"></span></div>
+                                    <div class="categories-card__content">
+                                        <h3 class="categories-card__title">Lorem, ipsum.</h3>
+                                        <p class="categories-card__descr text_prim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora?</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include('./components/root/footer.ejs') %>
+        <%- include('./components/root/popup.ejs') %>
+        <%- include('./components/root/cookie.ejs') %>
+        <%- include('./components/root/scroll-top.ejs') %>
+    </div>
+</body>
+
+</html>

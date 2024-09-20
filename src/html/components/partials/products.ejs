@@ -1,0 +1,46 @@
+<section class="products">
+    <div class="container">
+        <div class="products__inner">
+            <div class="products__content">
+                <% if (page == 'category') { %>
+                <h1 class="title_prim">Category</h1>
+                <div class="products__filter products-filter">
+                    <div class="products-filter__sort">
+                        <div class="products-filter__row">
+                            <span>Sort by price:</span>
+                            <button class="products-filter__toggle">
+                                <div class="products-filter__toggle-open"><span class="icon-asc"></span><span>Ascending</span></div>
+                                <div class="products-filter__toggle-close"><span class="icon-desc"></span><span>Descending</span></div>
+                            </button>
+                        </div>
+                        <div class="products-filter__row">
+                            <span>Sort by discount:</span>
+                            <button class="products-filter__toggle">
+                                <div class="products-filter__toggle-open"><span class="icon-asc"></span><span>Ascending</span></div>
+                                <div class="products-filter__toggle-close"><span class="icon-desc"></span><span>Descending</span></div>
+                            </button>
+                        </div>
+                        <div class="products-filter__row">
+                            <span>Sort by rating:</span>
+                            <button class="products-filter__toggle">
+                                <div class="products-filter__toggle-open"><span class="icon-asc"></span><span>Ascending</span></div>
+                                <div class="products-filter__toggle-close"><span class="icon-desc"></span><span>Descending</span></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <% } else if (page === 'favorites') { %>
+                <h1 class="title_prim">Favorites</h1>
+                <p class="text_prim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolore earum maiores optio, quo quod!</p>
+                <% } else { %>
+                <h2 class="title_prim">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p class="text_prim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias dolorem vel recusandae. Expedita rerum voluptates assumenda sed doloremque laudantium, ad repudiandae optio rem suscipit in nobis necessitatibus sint! Suscipit nostrum, dolores, totam voluptatum tenetur dicta aliquid est architecto minima molestiae, cupiditate amet? Sunt ut possimus unde velit ipsam porro. Distinctio similique labore eos ipsum nostrum ipsa praesentium, impedit ipsam eum. Itaque magnam repellendus iste omnis voluptates fugiat error ducimus nemo harum recusandae. Iusto voluptate natus beatae facilis enim ipsa modi similique et nam excepturi reiciendis, vel eum voluptatem exercitationem pariatur dolores cum, quos voluptatum nostrum consequatur fugit? Minima maxime nobis, amet et beatae tempora nisi fugit quibusdam, molestias, debitis at temporibus placeat? Non id, velit eum, quaerat aliquid voluptates itaque magni exercitationem perspiciatis esse accusantium suscipit eos, consequatur fuga.</p>
+                <% } %>
+            </div>
+            <%- include('./products-list.ejs') %>
+            <% if (page == 'category') { %>
+            <%- include('./pagination.ejs') %>
+            <% } %>
+        </div>
+    </div>
+</section>

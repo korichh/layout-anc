@@ -1,0 +1,13 @@
+<ul class="blog-list">
+    <% for (let i = 0; i < count; i++) { %>
+    <li class="blog-list__item post-card">
+        <a href="/post.html" class="post-card__inner">
+            <div class="post-card__image"><img src="img/content/image2-768.webp" alt="image post" loading="lazy" width="" height=""></div>
+            <div class="post-card__content">
+                <span class="post-card__date">2024-04-12</span>
+                <span class="post-card__title">Post <%= i + 1 %></span>
+            </div>
+        </a>
+    </li>
+    <% } %>
+</ul>

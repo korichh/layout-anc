@@ -1,0 +1,184 @@
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__delivery"><span class="icon-delivery"></span><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, porro.</span></div>
+                    <a href="#" class="header__location" data-popup="location|Choose the city"><span class="icon-location"></span><span>Madrid</span></a>
+                    <a href="tel:+123456789" class="header__phone"><span class="icon-phone"></span><span>+1 (234) 567 89</span></a>
+                    <a href="mailto:example@gmail.com" class="header__mail"><span class="icon-mail"></span><span>example@gmail.com</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__mobile">
+            <div class="container">
+                <div class="header__mobile-inner">
+                    <button class="header__burger" data-mobile><span class="icon-burger"></span></button>
+                    <div class="header__logo"><a href="/index.html"><img src="img/logo.svg" alt="logo image" loading="lazy" width="150" height="50"></a></div>
+                    <button class="header__search" data-search><span class="icon-search"></span></button>
+                    <button class="header__cart" data-popup="cart|Cart"><span class="icon-cart" data-count="1"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="container">
+                <div class="header__middle-inner">
+                    <div class="header__logo"><a href="/index.html"><img src="img/logo.svg" alt="logo image" loading="lazy" width="150" height="50"></a></div>
+                    <form class="header__form header-form">
+                        <div class="header-form__inner">
+                            <div class="header-form__search">
+                                <button class="icon-search"></button>
+                                <input name="s" type="text" placeholder="Search for...">
+                            </div>
+                            <%- include('../partials/search-list.ejs', { count: 10 }) %>
+                        </div>
+                    </form>
+                    <a href="/favorites.html" class="header__action header__saved"><span class="icon-heart" data-count="1"></span></a>
+                    <a href="#" class="header__action header__cart" data-popup="cart|Cart"><span class="icon-cart" data-count="1"></span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container">
+                <div class="header__nav-inner">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#"><span>Categories</span><span class="icon-arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="/category.html">antibiotics</a></li>
+                                <li class="menu-item"><a href="/category.html">bestsellers</a></li>
+                                <li class="menu-item"><a href="/category.html">mens-health</a></li>
+                                <li class="menu-item"><a href="/category.html">erectile-dysfunction</a></li>
+                                <li class="menu-item"><a href="/category.html">alcoholism</a></li>
+                                <li class="menu-item"><a href="/category.html">skin-care</a></li>
+                                <li class="menu-item"><a href="/category.html">alzheimers-and-parkinsons</a></li>
+                                <li class="menu-item"><a href="/category.html">hypertension</a></li>
+                                <li class="menu-item"><a href="/category.html">cardiovascular-diseases</a></li>
+                                <li class="menu-item"><a href="/category.html">respiratory-tract</a></li>
+                                <li class="menu-item"><a href="/category.html">asthma</a></li>
+                                <li class="menu-item"><a href="/category.html">arthritis</a></li>
+                                <li class="menu-item"><a href="/category.html">surgery</a></li>
+                                <li class="menu-item"><a href="/category.html">migraine</a></li>
+                                <li class="menu-item"><a href="/category.html">muscle-relaxants</a></li>
+                                <li class="menu-item"><a href="/category.html">womens-health</a></li>
+                                <li class="menu-item"><a href="/category.html">brands</a></li>
+                                <li class="menu-item"><a href="/category.html">antifungals</a></li>
+                                <li class="menu-item"><a href="/category.html">urinary-tract</a></li>
+                                <li class="menu-item"><a href="/category.html">mental-disorders</a></li>
+                                <li class="menu-item"><a href="/category.html">neurological-disorders</a></li>
+                                <li class="menu-item"><a href="/category.html">cancer</a></li>
+                                <li class="menu-item"><a href="/category.html">diabetes</a></li>
+                                <li class="menu-item"><a href="/category.html">antiallergic</a></li>
+                                <li class="menu-item"><a href="/category.html">osteoporosis</a></li>
+                                <li class="menu-item"><a href="/category.html">anti-inflammatories</a></li>
+                                <li class="menu-item"><a href="/category.html">antiparasitic</a></li>
+                                <li class="menu-item"><a href="/category.html">gastrointestinal-tract</a></li>
+                                <li class="menu-item"><a href="/category.html">birth-control</a></li>
+                                <li class="menu-item"><a href="/category.html">cholesterol</a></li>
+                                <li class="menu-item"><a href="/category.html">antidepressants</a></li>
+                                <li class="menu-item"><a href="/category.html">antivirals</a></li>
+                                <li class="menu-item"><a href="/category.html">hiv</a></li>
+                                <li class="menu-item"><a href="/category.html">stop-smoking</a></li>
+                                <li class="menu-item"><a href="/category.html">anticonvulsants</a></li>
+                                <li class="menu-item"><a href="/category.html">eye-care</a></li>
+                                <li class="menu-item"><a href="/category.html">obesity</a></li>
+                                <li class="menu-item"><a href="/category.html">analgesics</a></li>
+                                <li class="menu-item"><a href="/category.html">vitamins-supplements</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="/payment.html">Payment and guarantees</a></li>
+                        <li class="menu-item"><a href="/about.html">About us</a></li>
+                        <li class="menu-item"><a href="/contacts.html">Contacts</a></li>
+                        <li class="menu-item"><a href="/faq.html">FAQ</a></li>
+                        <li class="menu-item"><a href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="header__mobile-menu mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__logo"><a href="/index.html"><img src="img/logo.svg" alt="logo image" loading="lazy" width="150" height="50"></a></div>
+                <button class="mobile-menu__close close"><span class="icon-close"></span></button>
+            </div>
+            <div class="mobile-menu__content">
+                <nav class="mobile-menu__nav">
+                    <ul class="menu">
+                        <li class="menu-item" data-popup="location|Choose the city"><a href="#"><span class="icon-location"></span><span>Location</span><span class="icon-arrow"></span></a></li>
+                        <li class="menu-item" data-popup="cart|Cart"><a href="#"><span class="icon-cart"></span><span>Cart</span><span class="icon-arrow"></span></a></li>
+                        <li class="menu-item"><a href="/favorites.html"><span class="icon-heart"></span><span>Saved</span></a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#"><span class="icon-category"></span><span>Categories</span><span class="icon-arrow"></span></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu__top"><button class="back"><span class="icon-arrow"></span><span class="caption">Categories</span></button><button class="close"><span class="icon-close"></span></button></div>
+                                <div class="sub-menu__content">
+                                    <ul class="menu">
+                                        <li class="menu-item"><a href="/category.html">antibiotics</a></li>
+                                        <li class="menu-item"><a href="/category.html">bestsellers</a></li>
+                                        <li class="menu-item"><a href="/category.html">mens-health</a></li>
+                                        <li class="menu-item"><a href="/category.html">erectile-dysfunction</a></li>
+                                        <li class="menu-item"><a href="/category.html">alcoholism</a></li>
+                                        <li class="menu-item"><a href="/category.html">skin-care</a></li>
+                                        <li class="menu-item"><a href="/category.html">alzheimers-and-parkinsons</a></li>
+                                        <li class="menu-item"><a href="/category.html">hypertension</a></li>
+                                        <li class="menu-item"><a href="/category.html">cardiovascular-diseases</a></li>
+                                        <li class="menu-item"><a href="/category.html">respiratory-tract</a></li>
+                                        <li class="menu-item"><a href="/category.html">asthma</a></li>
+                                        <li class="menu-item"><a href="/category.html">arthritis</a></li>
+                                        <li class="menu-item"><a href="/category.html">surgery</a></li>
+                                        <li class="menu-item"><a href="/category.html">migraine</a></li>
+                                        <li class="menu-item"><a href="/category.html">muscle-relaxants</a></li>
+                                        <li class="menu-item"><a href="/category.html">womens-health</a></li>
+                                        <li class="menu-item"><a href="/category.html">brands</a></li>
+                                        <li class="menu-item"><a href="/category.html">antifungals</a></li>
+                                        <li class="menu-item"><a href="/category.html">urinary-tract</a></li>
+                                        <li class="menu-item"><a href="/category.html">mental-disorders</a></li>
+                                        <li class="menu-item"><a href="/category.html">neurological-disorders</a></li>
+                                        <li class="menu-item"><a href="/category.html">cancer</a></li>
+                                        <li class="menu-item"><a href="/category.html">diabetes</a></li>
+                                        <li class="menu-item"><a href="/category.html">antiallergic</a></li>
+                                        <li class="menu-item"><a href="/category.html">osteoporosis</a></li>
+                                        <li class="menu-item"><a href="/category.html">anti-inflammatories</a></li>
+                                        <li class="menu-item"><a href="/category.html">antiparasitic</a></li>
+                                        <li class="menu-item"><a href="/category.html">gastrointestinal-tract</a></li>
+                                        <li class="menu-item"><a href="/category.html">birth-control</a></li>
+                                        <li class="menu-item"><a href="/category.html">cholesterol</a></li>
+                                        <li class="menu-item"><a href="/category.html">antidepressants</a></li>
+                                        <li class="menu-item"><a href="/category.html">antivirals</a></li>
+                                        <li class="menu-item"><a href="/category.html">hiv</a></li>
+                                        <li class="menu-item"><a href="/category.html">stop-smoking</a></li>
+                                        <li class="menu-item"><a href="/category.html">anticonvulsants</a></li>
+                                        <li class="menu-item"><a href="/category.html">eye-care</a></li>
+                                        <li class="menu-item"><a href="/category.html">obesity</a></li>
+                                        <li class="menu-item"><a href="/category.html">analgesics</a></li>
+                                        <li class="menu-item"><a href="/category.html">vitamins-supplements</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item"><a href="/payment.html"><span class="icon-payment"></span><span>Payment and guarantees</span></a></li>
+                        <li class="menu-item"><a href="/about.html"><span class="icon-about"></span><span>About us</span></a></li>
+                        <li class="menu-item"><a href="/contacts.html"><span class="icon-mail"></span><span>Contacts</span></a></li>
+                        <li class="menu-item"><a href="/faq.html"><span class="icon-faq"></span><span>FAQ</span></a></li>
+                        <li class="menu-item"><a href="/blog.html"><span class="icon-blog"></span><span>Blog</span></a></li>
+                        <li class="menu-item">
+                            <a href="#"><span class="icon-info"></span><span>Info</span><span class="icon-arrow"></span></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu__top"><button class="back"><span class="icon-arrow"></span><span class="caption">Info</span></button><button class="close"><span class="icon-close"></span></button></div>
+                                <div class="sub-menu__content">
+                                    <div class="row"><span class="icon-delivery"></span><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, porro.</span></div>
+                                    <a href="tel:+123456789" class="row"><span class="icon-phone"></span><span>+1 (234) 567 89</span></a>
+                                    <a href="mailto:mail@test.com" class="row"><span class="icon-mail"></span><span>mail@test.com</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</header>

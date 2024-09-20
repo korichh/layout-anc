@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./components/root/head.ejs', { title: 'Home' }) %>
+
+<body>
+    <div class="page">
+        <%- include('./components/root/header.ejs') %>
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__content">
+                            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+                            <p class="text_prim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod fugiat sint ut ducimus, ratione dolore totam beatae ex dignissimos soluta hic aperiam dolores praesentium debitis nostrum aliquam iste eaque.</p>
+                            <div class="hero__btns">
+                                <a href="/categories.html" class="btn btn_prim">Categories</a>
+                                <a href="/contacts.html" class="btn">Contacts</a>
+                                <a href="/chat.html" class="btn">Live chat 24/7</a>
+                            </div>
+                        </div>
+                        <div class="hero__image">
+                            <img src="img/hero/hero.webp" alt="hero image" loading="lazy" width="700" height="361">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="container">
+                    <div class="cards__inner">
+                        <ul class="cards__list">
+                            <% for (let i = 0; i < 3; i++) { %>
+                            <li class="cards__item">
+                                <div class="cards__icon"><span class="icon-delivery"></span></div>
+                                <div class="cards__content">
+                                    <p class="cards__title">Lorem, ipsum dolor.</p>
+                                    <p class="cards__text text_prim">Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </li>
+                            <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <%- include('./components/partials/products.ejs', { page: 'index', count: 10 }) %>
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__inner">
+                        <div class="reviews__content">
+                            <h2 class="title_prim">Reviews</h2>
+                        </div>
+                        <%- include('./components/partials/reviews-list.ejs', { count: 6 }) %>
+                    </div>
+                </div>
+            </section>
+            <%- include('./components/partials/content.ejs', { page: 'index' }) %>
+            <section class="subscribe">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe__content">
+                            <h2 class="title_prim">Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="subscribe__tip">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <form class="subscribe__form form">
+                            <div class="form__row">
+                                <div class="form__column">
+                                    <div class="form__subscribe">
+                                        <input type="email" name="email" required placeholder="Email">
+                                        <button class="btn btn_prim" type="submit"><span class="icon-send"></span><span>Subscribe</span></button>
+                                    </div>
+                                    <div class="form__subscribe-success">Lorem ipsum dolor sit amet!</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include('./components/root/footer.ejs') %>
+        <%- include('./components/root/popup.ejs') %>
+        <%- include('./components/root/cookie.ejs') %>
+        <%- include('./components/root/scroll-top.ejs') %>
+    </div>
+</body>
+
+</html>

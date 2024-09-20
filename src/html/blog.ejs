@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./components/root/head.ejs', { title: 'Blog' }) %>
+
+<body>
+    <div class="page">
+        <%- include('./components/root/header.ejs') %>
+        <main class="main">
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__inner">
+                        <div class="blog__content">
+                            <h1 class="title_prim">Blog</h1>
+                        </div>
+                        <%- include('./components/partials/blog-list.ejs', { count: 6 }) %>
+                        <%- include('./components/partials/pagination.ejs') %>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include('./components/root/footer.ejs') %>
+        <%- include('./components/root/popup.ejs') %>
+        <%- include('./components/root/cookie.ejs') %>
+        <%- include('./components/root/scroll-top.ejs') %>
+    </div>
+</body>
+
+</html>

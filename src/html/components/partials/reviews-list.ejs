@@ -1,0 +1,29 @@
+<ul class="reviews-list">
+    <% for (let i = 0; i < count; i++) { %>
+    <li class="reviews-list__item review-card" itemscope="" itemtype="https://schema.org/Review">
+        <meta itemprop="datePublished" content="2024-04-05">
+        <meta itemprop="itemreviewed" itemscope="" itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="{$host}">
+        <meta itemprop="itemreviewed" content="{$host}">
+        <div class="review-card__inner">
+            <div class="review-card__top">
+                <div class="review-card__image"><img src="img/review/default.webp" alt="image default" loading="lazy" width="100" height="100"></div>
+                <div class="review-card__author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                    <h3 itemprop="name">Lorem, ipsum</h3>
+                    <div class="review-card__stars">
+                        <span class="icon-star-fill"></span>
+                        <span class="icon-star-fill"></span>
+                        <span class="icon-star-fill"></span>
+                        <span class="icon-star-fill"></span>
+                        <span class="icon-star-fill"></span>
+                    </div>
+                </div>
+                <div class="review-card__date">2024-04-04 17:53:31</div>
+            </div>
+            <div class="review-card__bottom" itemprop="reviewBody">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi odit animi saepe magni aspernatur! Quo voluptatum aut tempore harum deserunt doloribus, distinctio nemo amet ea? Minima fugiat illum dolorem ipsum.</p>
+            </div>
+        </div>
+    </li>
+    <% } %>
+</ul>

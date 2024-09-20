@@ -1,0 +1,8 @@
+<section class="breadcrumbs container">
+    <% for (let i = 0; i < crumbs.length; i++) { %>
+    <% if (i === crumbs.length - 1) { %>
+    <span class="breadcrumbs-item"><%= crumbs[i] %></span>
+    <% continue } %>
+    <a class="breadcrumbs-item" href="#"><%= crumbs[i] %></a>
+    <% } %>
+</section>

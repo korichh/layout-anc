@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./components/root/head.ejs', { title: '404' }) %>
+
+<body>
+    <div class="page">
+        <%- include('./components/root/header.ejs') %>
+        <main class="main">
+            <section class="error">
+                <div class="error__inner">
+                    <div class="error__content">
+                        <h1>Page does not exist</h1>
+                        <p>Looks like the link leading here was wrong. Please return to the <a href="/">home page</a>.</p>
+                    </div>
+                    <div class="error__image"><img src="img/content/404.webp" alt="error 404" width="1000" height="667"></div>
+                </div>
+            </section>
+        </main>
+        <%- include('./components/root/footer.ejs') %>
+        <%- include('./components/root/popup.ejs') %>
+        <%- include('./components/root/cookie.ejs') %>
+        <%- include('./components/root/scroll-top.ejs') %>
+    </div>
+</body>
+
+</html>
